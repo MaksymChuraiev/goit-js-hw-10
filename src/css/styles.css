@@ -3,8 +3,8 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+    'Open Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #fafafa;
@@ -17,4 +17,57 @@ body {
   padding: 8px;
   max-width: 320px;
   margin-bottom: 16px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-left: 0;
+}
+
+.countries-list_item {
+  display: flex;
+  align-items: center;
+}
+
+.countries-list_img {
+  width: 50px;
+  height: 30px;
+}
+
+.countries-list_title {
+  margin-left: 20px;
+}
+
+.countries-official {
+  display: flex;
+  align-items: center;
+}
+
+.countries-img {
+  width: 50px;
+  height: 30px;
+}
+
+.countries-title {
+  margin-left: 20px;
+}
+
+.countries-text {
+  font-weight: 900;
+}
+
+.countries-text_info {
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+.countries-text_info::after {
+  margin-left: 0;
+  content: ',';
+}
+
+.countries-text_info:last-child::after {
+  content: '';
 }
