@@ -29,6 +29,7 @@ function onChangeCountry(e) {
     .then(responce => {
       if (responce.length > 10) {
         Notify.info('Too many matches found. Please enter a more specific name.');
+        clear();
       }
       if (responce.length > 1 && responce.length <= 10) {
         renderCountryList(responce);
